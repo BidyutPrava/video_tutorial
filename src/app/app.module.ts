@@ -26,6 +26,7 @@ import {TripsPage} from "../pages/trips/trips";
 import {LocalWeatherPage} from "../pages/local-weather/local-weather";
 import {LandingPage} from "../pages/landing/landing";
 import { SubjectPage} from "../pages/subject/subject";
+import {VideoPage} from "../pages/video/video";
 
 // import services
 // end import services
@@ -48,7 +49,8 @@ import { SubjectPage} from "../pages/subject/subject";
     TripDetailPage,
     TripsPage,
     LandingPage,
-    SubjectPage
+    SubjectPage,
+    VideoPage
   ],
   imports: [
     BrowserModule,
@@ -77,7 +79,8 @@ import { SubjectPage} from "../pages/subject/subject";
     TripDetailPage,
     TripsPage,
     LandingPage,
-    SubjectPage
+    SubjectPage,
+    VideoPage
   ],
   providers: [
     StatusBar,

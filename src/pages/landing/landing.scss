@@ -10,4 +10,13 @@ page-landing {
         max-height: 100px !important;
         min-height: 100px !important;
     }
+    .gradient{
+        background: #0039a2; /* For browsers that do not support gradients */
+        background: linear-gradient(to right, #0039a2, #92b4f3);
+    }
+    .text{
+        color : white;
+        font-size: 0.8em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 }

@@ -27,40 +27,19 @@
       </ion-slide>
     </ion-slides>
   </ion-card>
-  <ion-title class="text-primary">
-    Choose your field
+  <div class="gradient">
+  <ion-title>
+    <span  class="text">Choose your field</span>
   </ion-title>
-  <ion-grid>
+</div>
+<ion-grid>
     <ion-row>
-      <ion-col class="card-design">
-        <ion-card item-start (click)="viewSubjects('mech')">
-          <ion-avatar >
-            <img class="card-image" src="../../assets/img/sub_mech.jpg">
-          </ion-avatar>
-        </ion-card>
-      </ion-col>
-      <ion-col class="card-design">
-        <ion-card>
-          <ion-avatar item-start>
-            <img class="card-image" src="../../assets/img/sub_ece.jpg">
-          </ion-avatar>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col class="card-design">
-        <ion-card>
-          <ion-avatar item-start>
-            <img class="card-image" src="../../assets/img/sub_cse.jpeg">
-          </ion-avatar>
-        </ion-card>
-      </ion-col>
-      <ion-col class="card-design">
-        <ion-card>
-          <ion-avatar item-start>
-            <img class="card-image" src="../../assets/img/sub_ee.jpg">
-          </ion-avatar>
-        </ion-card>
+      <ion-col *ngFor="let course  of courses" col-6 >
+          <ion-card (click)="viewSubjects(course.name)">
+              <ion-avatar item-start>
+                <img class="card-image" [src]="course.imgSrc">
+              </ion-avatar>
+            </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>

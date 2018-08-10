@@ -1,0 +1,25 @@
+<!--
+  Generated template for the VideoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Videos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list no-lines>
+    <ion-item class="border" *ngFor = "let video of videos">
+            <h2>{{video.name}}</h2>
+           <p>By: Prakash Saha</p>
+            <button ion-button clear item-end><ion-icon name="play" color="dark"></ion-icon></button>
+    </ion-item>
+  </ion-list>
+    
+</ion-content>

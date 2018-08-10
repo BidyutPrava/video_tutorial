@@ -6,13 +6,17 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>subject-page</ion-title>
+  <ion-navbar color="dark">
+    <ion-title>Subjects</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <ion-list>
+    <button ion-item (click)="subjectSelected(subject.id)" *ngFor="let subject of subjects" item-end>
+      {{subject.name}}
+    </button>
+  </ion-list>
 </ion-content>
